@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  font-family:Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.main-content-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ac4545;
+  padding: 20px;
+}
+
+.hero-area {
+  text-align: center;
+}
+
+
+.header-area {
+
+}
+
+.header-area .menu {
+
+}
+
+.header-area .menu ul {
+
+}
+
+.header-area .menu ul li {
+  display: inline-block;
+    
+}
+
+.header-area .menu ul li a {
+  display: inline-block;
+  background: burlywood;
+  padding: 5px 20px;
+  color: red;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.header-area .menu ul li a:hover {
+  background: #d98d1a;
+  color: #333;
+}

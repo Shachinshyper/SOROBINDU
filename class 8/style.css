@@ -1,0 +1,860 @@
+/*  Tab CSS  */
+
+/* Tab Navigation */
+.tab-navigation {
+    display: flex;
+    gap: 0px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tab-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #eff5fd;
+    color: #374151;
+    width: 24.6%;
+}
+
+.tab-button:hover {
+    background-color: #e5e7eb;
+}
+
+.tab-button.active {
+    background-color: #2563eb;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Tab Content */
+.tab-content {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 3rem;
+}
+
+/* Our Values Tab */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+}
+
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.value-item.empty-space {
+    visibility: hidden;
+}
+
+.value-image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.value-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.value-image.zoom-logo {
+    background-color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.value-image.zoom-logo span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+/* Our Benefits Tab */
+.benefits-intro {
+    font-size: 1.25rem;
+    color: #374151;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.benefit-image {
+    width: 8rem;
+    height: 6rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 4px solid;
+}
+
+.benefit-image.pink-border {
+    border-color: #ec4899;
+}
+
+.benefit-image.green-border {
+    border-color: #10b981;
+}
+
+.benefit-image.gray-border {
+    border-color: #6b7280;
+}
+
+.benefit-image.blue-border {
+    border-color: #3b82f6;
+}
+
+.benefit-image.purple-border {
+    border-color: #8b5cf6;
+}
+
+.benefit-image.orange-border {
+    border-color: #f59e0b;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benefit-content h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-content p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+.benefits-disclaimer {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+}
+
+.view-all-btn {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* Belonging at Zoom Tab */
+.belonging-description {
+    font-size: 1.125rem;
+    color: #374151;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.groups-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    max-width: 1000px;
+}
+
+.group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.group-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.group-icon.women {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.group-icon.muslims {
+    background-color: #d1fae5;
+    font-size: 1.5rem;
+}
+
+.group-icon.shalom {
+    background-color: #dbeafe;
+    font-size: 1.5rem;
+}
+
+.group-icon.coexist {
+    background-color: #d1fae5;
+    font-size: 1.5rem;
+}
+
+.group-icon.soul {
+    background-color: #ede9fe;
+    font-size: 1.5rem;
+}
+
+.group-icon.pact {
+    background-color: #fed7aa;
+    font-size: 1.5rem;
+}
+
+.group-icon.pride {
+    background-color: #fef3c7;
+    font-size: 1.5rem;
+}
+
+.group-icon.veterans {
+    background-color: #dbeafe;
+    font-size: 1.5rem;
+}
+
+.group-icon.somos {
+    background-color: #fef3c7;
+    font-size: 1.5rem;
+}
+
+.group-text h4 {
+    font-weight: bold;
+    color: #2563eb;
+    font-size: 1rem;
+}
+
+.group-text p {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.ecg-disclaimer {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 2rem;
+}
+
+/* Zoom Cares Tab */
+.cares-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.cares-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.cares-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.zoom-cares-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.heart-icon {
+    font-size: 2rem;
+}
+
+.cares-text p {
+    font-size: 1.125rem;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.cares-link {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.cares-link:hover {
+    color: #1d4ed8;
+}
+
+.cares-visual {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.decoration {
+    position: absolute;
+    border-radius: 0.5rem;
+}
+
+.yellow-rect {
+    width: 4rem;
+    height: 4rem;
+    background-color: #fbbf24;
+    top: -2rem;
+    left: -2rem;
+    transform: rotate(12deg);
+}
+
+.blue-rect {
+    width: 3rem;
+    height: 3rem;
+    background-color: #60a5fa;
+    top: -1rem;
+    right: -1rem;
+    transform: rotate(-12deg);
+}
+
+.orange-rect {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #fb923c;
+    bottom: -2rem;
+    left: -3rem;
+    transform: rotate(45deg);
+}
+
+.green-rect {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #34d399;
+    bottom: -1rem;
+    right: -2rem;
+    transform: rotate(-45deg);
+}
+
+.purple-rect {
+    width: 2rem;
+    height: 2rem;
+    background-color: #a78bfa;
+    top: 50%;
+    left: -4rem;
+    transform: rotate(12deg);
+}
+
+.cyan-rect {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #22d3ee;
+    bottom: 25%;
+    right: 3rem;
+    transform: rotate(-12deg);
+}
+
+.sparkle {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.sparkle-1 {
+    top: -1.5rem;
+    right: 2rem;
+    color: #fbbf24;
+}
+
+.sparkle-2 {
+    bottom: 0;
+    left: -1.5rem;
+    color: #34d399;
+    font-size: 1.25rem;
+}
+
+.sparkle-3 {
+    top: 33%;
+    right: -1.5rem;
+    color: #fbbf24;
+    font-size: 1.125rem;
+}
+
+.cares-image {
+    width: 20rem;
+    height: 16rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    border: 4px solid #ec4899;
+    background-color: white;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cares-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* End Tab CSS */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Theme Default CSS */
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.display-flex-jwsb {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.primary-btn {
+    color: #fff;
+    background: #095cff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+/* Main Css */
+/* Header CSS */
+.header-bottom {
+    background: #39394d;
+    padding: 20px 0;
+}
+
+.header-top {
+    background: #fff;
+}
+
+.header-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-right ul a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.header-right ul li:last-child a {
+    background: orange;
+    border-radius: 25px;
+    color: #fff;
+}
+.header-top {
+    background: #fff;
+    padding: 10px 0;
+}
+.header-left img {
+    width: 100px;
+}
+
+.header-main-menu ul {
+    display: flex;
+    list-style: none;
+}
+.header-main-menu ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    padding-right: 15px;
+}
+
+
+/* Hero Css */
+.full-width-container {
+    max-width: 1550px;
+    margin: auto;
+}
+
+.hero-left {}
+
+.hero-left h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.primary-btn.white-btn {
+    background: #fff;
+    border: 1px solid blue;
+    color: blue;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Theme Default CSS */
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.display-flex-jwsb {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.primary-btn {
+    color: #fff;
+    background: #095cff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+/* Main Css */
+/* Header CSS */
+.header-bottom {
+    background: #39394d;
+    padding: 20px 0;
+}
+
+.header-top {
+    background: #fff;
+}
+
+.header-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-right ul a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.header-right ul li:last-child a {
+    background: orange;
+    border-radius: 25px;
+    color: #fff;
+}
+.header-top {
+    background: #fff;
+    padding: 10px 0;
+}
+.header-left img {
+    width: 100px;
+}
+
+.header-main-menu ul {
+    display: flex;
+    list-style: none;
+}
+.header-main-menu ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    padding: 10px;
+    padding-right: 15px;
+}
+
+
+/* Hero Css */
+.full-width-container {
+    max-width: 1550px;
+    margin: auto;
+}
+.hero-left {
+    background: #00053d;
+    width: 50%;
+    color: #fff;
+    padding: 5%;
+    min-height: 400px;
+}
+
+.hero-left h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.primary-btn.white-btn {
+    background: #fff;
+    border: 1px solid blue;
+    color: blue;
+}
+.hero-right {
+    width: 50%;
+    background: url('https://d25wby5c7p9100.cloudfront.net/public/uploads/935d424294452cd593626715b53d39be/images/files/89403879716db304a1113c8c72df5699/large/Copy_of_20220607-DSC_7056_%281%29.jpg?1719581834') no-repeat center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+/* Clsss 10 New CSS */
+.search-row {
+    padding: 30px 0;
+}
+
+.search-input-with-button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.search-input-with-button  input[type="text"] {
+    width: 87%;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 19px;
+}
+
+.search-input-with-button button.search-btn {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #0b5cfe;
+    color: #fff;
+    font-size: 19px;
+}
+
+.search-input {
+    box-shadow: 1px 4px 12px 0px rgba(0,0,0,.1);
+    border-radius: 10px;
+    padding: 30px 0;
+}
+.search-bottom-title {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 32px;
+    /* max-width: 90%; */
+    /* margin: auto; */
+}
+
+
+.terms-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.terms-section h2 {
+    font-size: 50px;
+}
+
+.terms-section p {
+    font-size: 20px;
+}
+.terms-section-with-icon.display-flex-jwsb {
+    gap: 50px 0px;
+}
+
+.terms-icon {
+    width: 25%;
+    text-align: center;
+    gap: 0px 20px;
+}
+
+section.terms-sections {
+    background: #f6f6f7;
+    padding: 50px 0;
+}
+
+.terms-sections-inner-wrap {
+    background: white;
+    max-width: 1520px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 75px 0;
+}
+.tab-row {
+    padding-bottom: 100px;
+}
+
+ol.hiring-process-list {
+    list-style: none;
+}
+
+ol.hiring-process-list li {
+    display: block;
+    font-size: 23px;
+    padding-bottom: 4px;
+    padding-top: 5px;
+}
+
+.hiring-process-list li:before {
+    content: "1";
+    background: #0b5cfe;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    font-size: 19px;
+    margin-right: 10px;
+}
+.hiring-process-list li:nth-child(2):before {
+    content: "2";
+}
+
+.hiring-process-list li:nth-child(3):before {
+    content: "3";
+}
+
+.hiring-process-list li:nth-child(4):before {
+    content: "4";
+}   
+.hiring-process-list li:nth-child(5):before {
+    content: "5";
+}
+.hiring-process-list li:nth-child(6):before {
+    content: "6";
+}
+.hiring-process-list li:nth-child(7):before {
+    content: "7";
+}
+.hiring-process-list li:nth-child(8):before {
+    content: "8";
+}
+.hiring-process-list li:nth-child(9):before {
+    content: "9";
+}
+.hiring-process-list li:nth-child(10):before {
+    content: "10";
+}
+
+section.footer-section {
+    background: #30363d;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.footer-top-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+
+.footer-center-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #dddddd47;
+}
+
+.footer-left-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+
+
+.footer-left-menu ul li a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.footer-social-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer-social-menu ul li a {
+    color: #fff;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.footer-bottom ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer-bottom ul li a {
+    color: #fff;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.footer-bottom {padding-top: 20px;}

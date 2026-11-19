@@ -1,0 +1,22 @@
+.main-div {
+    height: 400px;
+    width: 400px;
+    background: #117d15;
+}
+
+.inner-div {
+    height: 300px;
+    width: 300px;
+    background: tomato;
+    border: 10px solid yellow;
+    margin-left: 30px;
+}
+
+h3 {
+    background: red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+h3 {}

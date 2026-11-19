@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+max-width: 1300px;
+margin:auto;
+}
+
+.display-flex-jwsb {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-top {
+    background:#f5f5f5;
+    padding: 10px 0;
+}
+
+.header-bottom {
+    background:#3b3b3f;
+    padding: 20px 0;
+} 
+
+.header-right ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-right ul a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.header-right ul li:last-child a {
+    background: #0b5cff;
+    border-radius: 25px;
+    color: #ffff;
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-main-menu ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffff;
+    padding: 10px;
+    padding-right: 15px;
+}
+
+.primary-btn {
+    color: #fff;
+    background: #0b5cff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+.full-width-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+section.hero-section {
+    padding: 120px 0;
+}
+
+.hero-left h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
